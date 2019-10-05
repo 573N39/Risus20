@@ -6,27 +6,26 @@ img {
     max-width: 100%;
 }
             
-nav{
+nav {
 border-style: solid; 
 background-color:white; 
 width: 180px; 
 padding: 0px; 
 height: 400px;
-position: fixed;
 }
             
 article{
 border-style: solid; 
 background-color:white; 
 padding: 10px;
-margin-left: 185px;
+margin-left: 10px;
 }
 
 footer {
     bottom: 0;
 }
             
-h1{
+h1 {
 text-align: left; 
 margin: 0px; 
 font-size: 35px; 
@@ -38,21 +37,27 @@ margin-bottom: 0px;
 color: rebeccapurple
 }
             
-a{
+a {
 text-decoration: none; 
 color: rebeccapurple
 }
             
-#active{
+#active {
 display:block; 
 color: deeppink;
 }
-            
-#grid{
-display:grid 5px; solid: black; 
+
+#grid {
+display: grid;
 grid-template-columns: 180px 1fr;
 }    
 
-@media(max-width:700px){
-#grid{display:block;}
+@media(max-width:700px) {
+    #grid {
+    display:block;
+    }
+    article {
+    margin-left: 0;
+    margin-top: 5px;
+    }
 }
